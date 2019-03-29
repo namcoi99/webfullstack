@@ -33,8 +33,26 @@ function generate(testLengthArray){
       obj.input.push(Math.floor((Math.random()*20000)-10000));
     }
     sort(obj.input);
-    obj.target = Math.floor((Math.random()*20000)-10000);
-    obj.output = search(obj.input,obj.target);
+    if(i == 0){
+      obj.target = 100001;
+      obj.output = obj.input.indexOf(obj.target);
+    }
+    else if(i == 1){
+      obj.target = obj.input[0];
+      obj.output = 0;
+    }
+    else if(i == 2){
+      obj.target = obj.input[obj.input.length-1];
+      obj.output = obj.input.length-1;
+    }
+    else if(i == 3){
+      obj.target = obj.input[2];
+      obj.output = 2;
+    }
+    else{
+      obj.target = Math.floor((Math.random()*20000)-10000);
+      obj.output = search(obj.input,obj.target);
+    }
     array.push(obj);
   }
   return array;
