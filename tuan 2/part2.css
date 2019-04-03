@@ -24,12 +24,7 @@
   margin: 1px;
 }
 
-span:hover{
-  color: #FFFFFF;
-  background: #9CD08F;
-}
-
-div:hover{
+div:hover,span:hover{
   color: #FFFFFF;
   background: #9CD08F;
 }
