@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>quyết đê</title>
+  </head>
+  <body>
+    <h1>Hãy hỏi cộng đồng một câu hỏi đúng/sai hoặc có/không</h1>
+    <form action="/addquestion" method="post">
+      <textarea name="question" rows="8" cols="80" maxlength="200"></textarea>
+      <span>còn 200/200 kí tự</span>
+      <button>Gửi</button>
+    </form>
+
+    <script>
+      document.querySelector("textarea").addEventListener('input', function(){
+                document.querySelector('span').innerText = `còn ${200 - document.querySelector("textarea").value.length}/200 kí tự`;
+            });
+    </script>
+
+  </body>
+</html>
