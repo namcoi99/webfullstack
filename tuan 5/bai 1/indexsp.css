@@ -1,0 +1,39 @@
+.menu span{
+  display: inline-block;
+  color: #402E2A;
+  background: #D5B0AC;
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+  line-height: 40px;
+}
+
+nav{
+  color: #402E2A;
+  background: #D5B0AC;
+  font-weight: bold;
+  text-align: center;
+}
+
+.submenu{
+  display: none;
+  position: absolute;
+}
+
+.menu span:hover{
+  color: #FFFFFF;
+  background: #9CD08F;
+}
+
+.menu span:hover > .submenu{
+  display: grid;
+  color: #402E2A;
+  background: #D5B0AC;
+}
+
+.submenu span:hover > .submenu{
+  display: inline-grid;
+  color: #402E2A;
+  background: #D5B0AC;
+  left: 100px;
+}
