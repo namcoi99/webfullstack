@@ -1,0 +1,13 @@
+body {
+    background-color: #FBFEF9;
+    color: #333333;
+}
+
+.container .form-control{
+    border-color: #BF1363;
+    border-radius: 9px;
+}
+
+.table table-striped {
+    border-top-color: #BF1363;
+}
